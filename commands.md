@@ -12,7 +12,11 @@ pip install python-dotenv
 
 ./manage.py spectacular --file schema.yml
 
+ pytest --cov
 
+ pip freeze > requirements.txt
+
+ coverage run -m pytest
 
 #Packages
 
@@ -24,3 +28,5 @@ djangorestframework==3.14.0
 django-mptt
 drf-spectacular
 htmlcov/
+pytest-cov
+coverage
